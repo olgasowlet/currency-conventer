@@ -1,0 +1,44 @@
+.conventer {
+    font-size: 30px;
+    text-align: center;
+}
+
+.conventer__label{
+    margin: 5px 20px;
+}
+
+.conventer__input, .conventer__select{
+    background-color: transparent;
+    color: #fabc2a;
+    border: 2px solid #fabc2a;
+    width: 100px;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.conventer__input{
+    width: 150px;
+}
+
+.conventer__button{
+    margin-top: 20px;
+    background-color: #fabc2a;
+    text-transform: uppercase;
+    color: #262626;
+    padding: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+.conventer__button:hover{
+    color: #fabc2a;
+    background-color: #262626;
+    outline: 2px solid #fabc2a;
+}
+
+.conventer__result{
+    color: #fabc2a;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
