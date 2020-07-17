@@ -1,5 +1,5 @@
 # Currency-conventer
 
-Currency conventer is my first project published on github. It shows my beginnigs of studying JavaScript.
+<https://olgasowlet.github.io/currency-conventer/>
 ***
-Hope to upgrade it in future. 
+Currency conventer is my first project published on github. It shows my beginnigs of studying JavaScript. Hope to upgrade it in future. 
