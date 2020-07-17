@@ -1,6 +1,11 @@
 .footer {
-    border-top: 1px solid #fabc2a;
-    text-align: center;
     margin-top: 30px;
     font-size: 10px;
+    position: absolute;
+    bottom: 0;
 }
+
+/* .footer__div {
+    position: absolute;
+    bottom: 0;
+} */
