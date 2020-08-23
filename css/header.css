@@ -12,3 +12,10 @@
         font-size: 40px;
     }
 }
+
+@media (max-width: 424px) {
+    .header__title {
+        margin: 10px auto;
+        font-size: 40px;
+    }
+}
