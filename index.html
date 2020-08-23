@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator walut</title>
-    <meta property="og:title" content="Kalkulator walut"/>
-    <meta property="og:image" content="https://s3.envato.com/files/57448667/0764_Treasures_MVI_0692_00000.jpg"/>
+    <meta property="og:title" content="Kalkulator walut" />
+    <meta property="og:image" content="https://s3.envato.com/files/57448667/0764_Treasures_MVI_0692_00000.jpg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" />
@@ -15,52 +15,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/body.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/content.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/conventer.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="icon" href="images/icon.svg"/>
+    <link rel="icon" href="images/icon.svg" />
     <script src="js/conventer.js" defer></script>
 </head>
 
 <body class="body">
-    <section class="content">
-        <header class="header">
-            <h1 class="header__title">Kalkulator walut</h1>
-        </header>
-        <main class="main">
-            <form class="conventer">
-                <label class="conventer__label">
-                    Kwota: <input class="conventer__input js-initial" type="number" min="0" required>
-                </label>
-                <label class="conventer__label">
-                    Z:
-                    <select class="conventer__select js-from" name="currency" required>
-                        <option value="PLN">PLN</option>
-                        <option value="EUR">EUR</option>
-                        <option value="USD">USD</option>
-                        <option value="CZK">CZK</option>
-                    </select></label>
-                <label class="conventer__label">
-                    Na:
-                    <select class="conventer__select js-to" name="currency" required>
-                        <option value="PLN">PLN</option>
-                        <option value="EUR">EUR</option>
-                        <option value="USD">USD</option>
-                        <option value="CZK">CZK</option>
-                    </select>
-                </label><br>
-                <button class="conventer__button">Przelicz</button><br>
-            </form>
-            <div class="conventer__result"></div>
-        </main>
-        <footer class="footer">
-            <div class="footer__div">
-                <p class="footer__paragraph">Pozdrawiam i życzę miłego dnia - Olga ;*</p>
-            </div>
-        </footer>
-    </section>
+    <header class="header">
+        <h1 class="header__title">Kalkulator walut</h1>
+    </header>
+    <form class="conventer">
+        <label class="conventer__label">
+            Kwota: <input class="conventer__input js-initial" type="number" min="0" required>
+        </label>
+        <label class="conventer__label">
+            Z:
+            <select class="conventer__select js-from" name="currency" required>
+                <option value="PLN">PLN</option>
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="CZK">CZK</option>
+            </select></label>
+        <label class="conventer__label">
+            Na:
+            <select class="conventer__select js-to" name="currency" required>
+                <option value="PLN">PLN</option>
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="CZK">CZK</option>
+            </select>
+        </label><br>
+        <button class="conventer__button">Przelicz</button><br>
+    </form>
+    <div class="conventer__result"></div>
+    <footer class="footer">
+        <div class="footer__div">
+            <p class="footer__paragraph">Pozdrawiam i życzę miłego dnia - Olga ;*</p>
+        </div>
+    </footer>
 </body>
 
 </html>
