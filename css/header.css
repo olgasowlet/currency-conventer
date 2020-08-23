@@ -6,3 +6,9 @@
     font-family: 'Montserrat Subrayada', sans-serif;
     margin: 30px 50px;
 }
+
+@media (max-width: 769px) {
+    .header__title {
+        font-size: 40px;
+    }
+}
