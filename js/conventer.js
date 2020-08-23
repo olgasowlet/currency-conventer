@@ -7,7 +7,7 @@
     function myResult(amount, currency, secondCurrency) {
 
         if (fromCurrency.value === toCurrency.value) {
-            conventerResult.innerText = amount;
+            return amount;
         } else {
             switch (currency) {
                 case "EUR":
@@ -57,10 +57,10 @@
     function onFormSubmit(event) {
         event.preventDefault();
 
-        const currentCurrency = document.querySelector(".js-initial");
+        const currentResult = document.querySelector(".js-initial");
         const conventerResult = document.querySelector(".conventer__result");
 
-        const result = myResult(+currentCurrency.value, fromCurrency.value, toCurrency.value);
+        const result = myResult(+currentResult.value, fromCurrency.value, toCurrency.value);
         conventerResult.innerText = +result.toFixed(2);
     }
 
