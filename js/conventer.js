@@ -6,53 +6,41 @@
 
     function myResult(amount, currency, secondCurrency) {
 
-        if (fromCurrency.value === toCurrency.value) {
+        const rateEUR = 4.4;
+        const rateUSD = 3.7;
+        const rateCZK = 0.16;
+        const ratePLN = 1;
+
+        if (currency === secondCurrency) {
             return amount;
-        } else {
-            switch (currency) {
-                case "EUR":
-                    switch (secondCurrency) {
-                        case "PLN":
-                            return amount * 4.47;
-                        case "USD":
-                            return amount * 1.13;
-                        case "CZK":
-                            return amount * 26.68;
-                    }
-                    break;
-                case "PLN":
-                    switch (secondCurrency) {
-                        case "EUR":
-                            return amount * 0.22;
-                        case "USD":
-                            return amount * 0.25;
-                        case "CZK":
-                            return amount * 5.96;
-                    }
-                    break;
-                case "USD":
-                    switch (secondCurrency) {
-                        case "PLN":
-                            return amount * 3.96;
-                        case "EUR":
-                            return amount * 0.89;
-                        case "CZK":
-                            return amount * 23.62;
-                    }
-                    break;
-                case "CZK":
-                    switch (secondCurrency) {
-                        case "PLN":
-                            return amount * 0.17;
-                        case "USD":
-                            return amount * 0.042;
-                        case "EUR":
-                            return amount * 0.037;
-                    }
-                    break;
-            }
-        }
-    }
+        };
+
+        switch (currency) {
+            case "EUR":
+                amount *= rateEUR;
+                break;
+            case "USD":
+                amount *= rateUSD;
+                break;
+            case "CZK":
+                amount *= rateCZK;
+                break;
+            case "PLN":
+                amount *= ratePLN;
+                break;
+        };
+
+        switch (secondCurrency) {
+            case "EUR":
+                return amount / rateEUR;
+            case "USD":
+                return amount / rateUSD;
+            case "CZK":
+                return amount / rateCZK;
+            case "PLN":
+                return amount;
+        };
+    };
 
     function onFormSubmit(event) {
         event.preventDefault();
@@ -62,12 +50,12 @@
 
         const result = myResult(+currentResult.value, fromCurrency.value, toCurrency.value);
         conventerResult.innerText = +result.toFixed(2) + ' ' + toCurrency.value;
-    }
+    };
 
     function init() {
         const formElement = document.querySelector(".conventer");
 
         formElement.addEventListener("submit", onFormSubmit);
-    
-    }
+
+    };
 }
