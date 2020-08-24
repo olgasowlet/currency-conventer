@@ -61,7 +61,7 @@
         const conventerResult = document.querySelector(".conventer__result");
 
         const result = myResult(+currentResult.value, fromCurrency.value, toCurrency.value);
-        conventerResult.innerText = +result.toFixed(2);
+        conventerResult.innerText = +result.toFixed(2) + ' ' + toCurrency.value;
     }
 
     function init() {
